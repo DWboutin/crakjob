@@ -44,6 +44,5 @@ gulp.task('scripts', function(){
 
 gulp.task('watch', function(){
   gulp.watch('app/scripts/**/*.js', ['scripts']);
-  gulp.watch('app/**/*.html', notifyLiveReload);
-  gulp.watch('app/prod/*.js', notifyLiveReload);
+  gulp.watch('app/**/*', notifyLiveReload);
 });
